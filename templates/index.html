@@ -1,0 +1,12 @@
+{% block header %}
+  <h1>{% block title %}TO DO LIST{% endblock %}</h1>
+{% endblock %}
+
+{% block content %}
+  <form method="post" id="TODOFORM">
+    <textarea name="TODO" form="TODOFORM" cols="40" rows="4" placeholder="Write your task..."></textarea>
+    <input type="date" id="TODO" name="date">
+    <br><br>
+    <button type="submit">+ADD</button>
+</form>
+{% endblock %}
